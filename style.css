@@ -1,0 +1,44 @@
+/* animi
+icon
+id:main
+name
+image */
+.animi{
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    color:blueviolet;
+    background: linear-gradient(to right, black,white,black,red);
+}
+.icon{
+    border-radius: 90%;
+
+}
+#main{
+    background: linear-gradient(to right,rgb(227, 13, 195), rgb(37, 183, 227));
+margin: 20px;
+padding:10px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+
+}
+.image{
+    width:200px;
+    height:200px;
+    border-radius: 60%;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space;
+    gap:10px;
+    padding: 20px;
+    margin:20px;
+    background: rgb(115, 90, 227);
+    border-radius: 20%;
+    width:300px;
+    height: 250px;
+}
