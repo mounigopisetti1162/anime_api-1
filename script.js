@@ -8,7 +8,7 @@ const getdata=async()=>
     try {
         
    
-    let animi=await fetch("https://anime-facts-rest-api.herokuapp.com/api/v1")
+    let animi=await fetch("https://api.disneyapi.dev/character")
     let value=await animi.json()
    let output=(value.data)
     output.forEach((obj)=>
@@ -24,8 +24,8 @@ const getdata=async()=>
 
 function display(obj)
 {
-    main.innerHTML+=`<div class="name">Name:<h4>${obj.anime_name}</h4>
-    <img class="image" src=${obj.anime_img}>
+    main.innerHTML+=`<div class="name">Name:<h4>${obj.name}</h4>
+    <img class="image" src=${obj.imageUrl}>
     </div>`
 }
 getdata()
